@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('checkout') {
             steps{
-                url: 'git@github.com:Priyanjana18/Jenkins.git'
+                url: 'https://github.com/Priyanjana18/Jenkins.git'
                 sh "ls -lat"
             }
         }
