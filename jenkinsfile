@@ -1,0 +1,9 @@
+pipeline{
+    stages{
+        stage('print') {
+            steps{
+                echo "Hello I am in pipeline"
+            }
+        }
+    }
+}
