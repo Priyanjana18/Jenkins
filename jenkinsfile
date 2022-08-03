@@ -1,6 +1,12 @@
 pipeline{
     agent any
     stages{
+        stage('checkout') {
+            steps{
+                url: 'git@github.com:Priyanjana18/Jenkins.git'
+                sh "ls -lat"
+            }
+        }
         stage('print') {
             steps{
                 echo "Hello I am in pipeline"
